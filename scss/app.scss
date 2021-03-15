@@ -1,0 +1,8 @@
+$theme-colors: (
+        "primary": #525eb5,
+        "secondary": #5764c1,
+        "info": #D4C2FC
+);
+
+// Then import Bootstrap an BootstrapVue SCSS files (order is important)
+@import '../node_modules/bootstrap/scss/bootstrap';
