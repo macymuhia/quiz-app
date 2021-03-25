@@ -41,4 +41,9 @@ export default {
   background-color: white;
   color: #525eb5;
 }
+.jumbotron-btn:hover {
+  background-color: #D4C2FC;
+  color: #525eb5;
+}
+
 </style>

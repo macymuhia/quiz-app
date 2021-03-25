@@ -4,11 +4,8 @@ import router from './router'
 import store from './store'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 
-import '../scss/app.scss'
-
 // Import Bootstrap an BootstrapVue CSS files (order is important)
-import '../node_modules/bootstrap/dist/css/bootstrap.css';
-import '../node_modules/bootstrap-vue/dist/bootstrap-vue.css'
+import './app.scss';
 
 // Make BootstrapVue available throughout your project
 Vue.use(BootstrapVue)
