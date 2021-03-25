@@ -22,7 +22,7 @@
 // @ is an alias to /src
 import TopBar from '@/components/TopBar'
 import SideBar from "@/components/SideBar";
-import QuizPage from '@/components/QuizPage'
+import QuizPage from '@/views/QuizPage'
 
 export default {
   name: 'Assessment',
@@ -37,11 +37,12 @@ export default {
 <style lang="scss" scoped>
 .quiz-container {
   display: grid;
-  background-color: #15202b;
-  //background-color: #f8f9fa;
-  border: 1px solid grey;
-  grid-template-rows: 80px 680px;
-  grid-template-columns: repeat(8, 12.5%);
+  //background-color: #15202b;
+  background-color: #f8f9fa;
+  //border: 1px solid grey;
+  grid-template-rows: 80px 960px;
+  grid-template-columns: repeat(10, 10%);
+  grid-gap: 1px;
 
   &_topbar {
     grid-row: 1 / 2;
@@ -55,6 +56,7 @@ export default {
   &_sidebar#side {
     grid-row: 1 / -1;
     grid-column: 1 / 2;
+    background-color: white;
   }
   &_quizpage {
     grid-row: 2;

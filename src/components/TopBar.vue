@@ -10,7 +10,7 @@
         <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
 
-      <b-navbar-brand class="topnav-menu" right href="#">User</b-navbar-brand>
+      <b-navbar-brand class="topnav-menu" right href="#">Macy</b-navbar-brand>
 
       <b-navbar-brand class="topnav-menu" right href="#">Logout</b-navbar-brand>
 
@@ -31,7 +31,7 @@ export default {
 
 <style lang="scss" scoped>
 .topnav {
-  height: 80px;
+  height: 77px;
   background-color: #f8f9fa;
   //padding-bottom: 30px;
   &-menu {
