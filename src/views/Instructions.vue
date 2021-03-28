@@ -1,18 +1,19 @@
 <template>
   <div class="home">
 <!--    <img alt="Vue logo" src="../assets/logo.png">-->
-    <Instructions />
+    <JumbotronCanvas />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Instructions from '@/components/Instructions.vue'
+import JumbotronCanvas from '@/components/JumbotronCanvas.vue'
 
 export default {
-  name: 'Home',
+  name: 'InstructionsPage',
+
   components: {
-    Instructions
+    JumbotronCanvas
   }
 }
 </script>

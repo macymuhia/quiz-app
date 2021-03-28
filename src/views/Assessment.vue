@@ -22,10 +22,11 @@
 // @ is an alias to /src
 import TopBar from '@/components/TopBar'
 import SideBar from "@/components/SideBar";
-import QuizPage from '@/views/QuizPage'
+import QuizPage from '@/components/QuizPage'
 
 export default {
-  name: 'Assessment',
+  name: 'AssessmentPage',
+
   components: {
     TopBar,
     SideBar,
