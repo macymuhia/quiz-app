@@ -29,12 +29,6 @@ export default {
   border: none;
   margin-left: 12.5%;
 }
-//.progress.mb-3.progressbar-bar div.progress-bar {
-//  background-color: #525eb5;
-//}
-//.progressbar {
-//  background-color: #525eb5;
-//}
 .progressbar {
   width: 67.8%;
   margin: 20px auto;
