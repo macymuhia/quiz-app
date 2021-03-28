@@ -10,9 +10,9 @@
         <!-- Right aligned nav items -->
       <b-navbar-nav class="ml-auto">
 
-      <b-navbar-brand class="topnav-menu" right href="#">Macy</b-navbar-brand>
+      <b-navbar-brand class="topnav-menu" right href="#"> {{currentUser.username}} </b-navbar-brand>
 
-      <b-navbar-brand class="topnav-menu" right href="#">Logout</b-navbar-brand>
+      <b-navbar-brand class="topnav-menu" right @click.prevent="logOut">Logout</b-navbar-brand>
 
         </b-navbar-nav>
       </b-collapse>
@@ -25,6 +25,25 @@
 export default {
   name: 'TopBar',
   components: {
+  },
+
+  computed: {
+    currentUser() {
+      return this.$store.state.auth.user;
+    }
+  },
+
+  mounted() {
+    if (!this.currentUser) {
+      this.$router.push('/');
+    }
+  },
+
+  methods: {
+    logOut() {
+      this.$store.dispatch('auth/logout');
+      this.$router.push('/');
+    }
   }
 }
 </script>
